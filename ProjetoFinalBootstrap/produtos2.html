@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/produtos_style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>MercadoRaiz - Produtos</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="home" class="promoTop justify-content-center d-flex">
+            <p class="font-weight-bold">ENTREGA GRÁTIS* no seu primeiro pedido. Aproveite!</p>
+        </div>
+        <section class="menuDesktop">            
+            <section class="menuDesktopP1 d-none d-lg-flex">
+                <div class="col-3">
+                    <a href="index.html"><img src="img/logo.png" style="height:5rem"></a>
+                </div>
+                <div class="col-5">
+                    <form class="form-inline my-2 my-lg-4 mx-lg-5">
+                        <input class="form-control mr-sm-2 col-9" type="search" placeholder="Nome do produto"
+                            aria-label="Pesquisar">
+                        <button class="font-weight-bold btn btn-outline-success my-2 my-sm-0"
+                            type="submit">Busca</button>
+                    </form>
+                </div>
+                <div class="col-2 text-right">
+                    <div class="btn-group ">
+                        <a class="btn dropdown-toggle my-lg-4" data-toggle="dropdown" href="#"><img class="mr-1"
+                                src="img/conta.svg" height="30px">Minha conta</a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><img class="mr-2" src="img/entrar.svg"
+                                    height="30px">Entrar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="cadastro.html"><img class="mr-2" src="img/criar.svg"
+                                    height="30px">Criar
+                                conta</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <a class="btn my-lg-4" data-toggle="dropdown" href="#"><img class="mr-1" src="img/cesta.svg"
+                                height="30px">Cesta</a>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="menuDesktopP2 navbar navbar-expand-lg navbar-light d-none d-lg-flex">
+                <ul class="navbar-nav container">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><img class="mr-2" src="img/home.svg" height="30px">Home
+                            <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreNos.html"><img class="mr-2" src="img/sobre.svg"
+                                height="30px">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="mr-2"
+                                src="img/produtos.svg" height="30px">Produtos</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="produtos.html"> <img class="mr-2" src="img/feira.svg"
+                                    height="30px">Feira</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="produtos2.html">
+                                <img class="mr-2" src="img/mercearia.svg" height="30px">Mercearia</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="menuMobile">   
+            <section class="menuMobileP1 d-lg-none d-flex">
+                <div class="col-3">
+                    <div class="btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><img class="mr-1"
+                                src="img/menu-button-wide.svg" height="30px"
+                                style="background-color: var(--cor-verde);"></a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><img class="mr-2" src="img/entrar.svg"
+                                    height="30px">Entrar</a>
+                            <a class="dropdown-item" href="cadastro.html"><img class="mr-2" src="img/criar.svg"
+                                    height="30px">Criar
+                                conta</a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" data-toggle="dropdown" href="index.html"><img class="mr-2"
+                                    src="img/home.svg" height="30px">Home<span class="sr-only">(página
+                                    atual)</span></a>
+                            <a class="dropdown-item" data-toggle="dropdown" href="sobreNos.html"><img class="mr-2"
+                                    src="img/sobre.svg" height="30px">Sobre Nós</a>
+                            <a class="btn dropdown-toggle ml-2" data-toggle="dropdown" href="#"><img class="mr-2"
+                                    src="img/produtos.svg" height="30px">Produtos</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="produtos.html"> <img class="mr-2" src="img/feira.svg"
+                                        height="30px">Feira</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="produtos2.html"><img class="mr-2" src="img/mercearia.svg"
+                                        height="30px">Mercearia</a>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <a href="index.html"><img src="img/logo.png" style="height:5rem"></a>
+                </div>
+                <div class="col-3">
+                    <a class="btn my-lg-4" data-toggle="dropdown" href="#"><img class="mr-1" src="img/cesta.svg"
+                            height="30px">Cesta</a>
+                </div>
+            </section>
+            <div class="d-lg-none d-block">
+                <form class="form-inline p-2 ml-4">
+                    <input class="form-control mx-2 col-9" type="search" placeholder="Nome do produto"
+                        aria-label="Pesquisar">
+                    <button class="btn btn-outline-success font-weight-bold" type="submit">Busca</button>
+                </form>
+            </div>
+            <div class="divisao d-lg-none d-block ">
+            </div>
+        </section>
+
+        <!-- banner -->
+        <div class="position-relative overflow-hidden bannerProdutos2"></div>
+
+    </header>
+
+    <main>
+
+        <div class="container mt-5">
+            <div class="row ">
+                <div class="menuMercearia col-lg-2">
+                    <h2>Mercearia</h2>
+                    <ul class="nav flex-column" id="myTab" role="tablist" aria-orientation="vertical">
+                        <li>
+                            <a class="nav-link active" id="alimentos-tab" data-toggle="tab" href="#alimentos" role="tab"
+                                aria-controls="alimentos" aria-selected="true">Alimentos Básicos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="especialidades-tab" data-toggle="tab" href="#especialidades"
+                                role="tab" aria-controls="especialidades" aria-selected="false">Especialidades da
+                                Casa</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="alimentos" role="tabpanel" aria-labelledby="alimentos-tab">
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/azeite.png" alt="azeite">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Azeite Orgânico - 500ml</p>
+                                        <h5 class="card-title">R$ 48,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/feijao.png" alt="feijaoDeCorda">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Feijão de Corda Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 15,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/chá.png" alt="cha">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Chá Mate Orgânico - 70gr</p>
+                                        <h5 class="card-title">R$ 23,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/arroz.png" alt="arroz">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Arroz Orgânico - 1kg</p>
+                                        <h5 class="card-title">R$ 18,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/arroz2.png" alt="arroz">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Arroz Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 9,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/cafe.png" alt="cafe">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Café Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 29,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-sm-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/acucar.png" alt="acucar">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Açucar Mascavo Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 14,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/trigo.png" alt="trigo">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Farinha de Trigo Orgânica - 1kg</p>
+                                        <h5 class="card-title">R$ 12,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane" id="especialidades" role="tabpanel" aria-labelledby="especialidades-tab">
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/paoDeBanana.jpg" alt="paoDeBanana">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Pão de Banana Orgânico - Unidade</p>
+                                        <h5 class="card-title">R$ 13,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/geleia.jpg" alt="geleia">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Geleia Natural Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 11,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/mel.jpg" alt="mel">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Mel Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 18,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Mercearia/ovos.jpg" alt="ovos">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Ovos Caipiras Orgânico - Dúzia</p>
+                                        <div class="row">
+                                            <h5 class="card-title text-muted"><del>R$ 12,99</del></h5>
+                                            <h5 class="card-title">R$ 9,99</h5>
+                                        </div>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/melAromatizado.png" alt="melAromatizado">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Mel Aromatizado Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 22,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/paoIntegral.png" alt="paoIntegral">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Pão Integral Orgânico - Unidade</p>
+                                        <h5 class="card-title">R$ 17,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/paoCaseiro.png" alt="paoCaseiro">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Pão Caseiro Orgânico - Unidade</p>
+                                        <h5 class="card-title">R$ 14,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="botao-top"><a href="#home"><img class="imagem-botao" src="img/seta-para-cima.png"
+            alt="seta-para-inicio"></a></button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="rodape">
+            <section class="menuFooter">
+                <div>                 
+                    <ul>
+                        <h5>Minha conta</h5>
+                        <a href="#">
+                            <li>Entrar</li>
+                        </a>
+                        <a href="cadastro.html">
+                            <li>Criar conta</li>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h5>Institucional</h5>
+                        <a href="index.html"><li>Home</li></a>
+                    <a href="sobreNos.html"><li>Sobre Nós</li></a>
+                    </ul>
+                    
+                </div>
+                <div>
+                    <ul>
+                        <h5>Produtos</h5>
+                        <a href="produtos.html"><li>Feira</li></a>
+                    <a href="produtos2.html"><li>Mercearia</li></a>
+                    </ul>
+                    
+                </div>
+            </section>
+            <section id="logo_footer">
+                <img src="img/logo.png" alt="Logo" >
+            </section>           
+            <section id="iconesRodape">
+                <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><img src="img/fb.svg"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img src="img/ig.svg"
+                        alt="Instagram"></a>
+            </section>
+        </section>
+        <hr id="divideFooter">
+        <section class="avisos">
+            <p id="copyright">&copy; 2021. Todos os direitos reservados.</p>
+            <p> *Para compras acima de R$ 50,00. Preços, ofertas e condições válidos durante o dia de hoje, podendo
+                sofrer
+                alterações sem prévia notificação.</p>
+        </section>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="js/botao_script.js"></script>
+    
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

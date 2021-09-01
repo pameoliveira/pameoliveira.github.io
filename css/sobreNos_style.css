@@ -1,0 +1,54 @@
+/* paleta principal de cores */
+:root {
+    --cor-laranja: #D6352D;
+    --cor-verde: #54BE95;
+    --cor-amarelo: #F6A500;
+    --cor-amar: #e9b855;
+    --cor-marrom: #420808;        
+    --cor-preto: #28282B;
+    --cor-branco: #F7F7F7;
+}
+
+.bannerSobreNos {
+    background-image: url(../img/bannerSobreNos.png);
+    background-color: #599d83;
+    background-position: center;
+    height: 300px;           
+    background-repeat: no-repeat;
+}
+
+.quemSomos {
+    font-size: x-large;
+}
+
+
+.MVV div{
+    font-size: x-large;
+    
+}
+
+aside{
+    font-size: large;  
+    background-color: var(--cor-amar);  
+}
+
+aside a{
+    text-decoration: none;
+    color: var(--cor-marrom);
+}
+
+aside a:hover{    
+    color: var(--cor-marrom);
+}
+
+aside img{    
+    background-color: var(--cor-branco);
+    width: 10rem;
+    height: 20rem;
+    padding: 1rem; 
+}
+
+.contato{
+    color: var(--cor-amarelo); 
+    font-size: 5rem;
+}

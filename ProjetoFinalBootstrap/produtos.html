@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/produtos_style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>MercadoRaiz - Produtos</title>
+
+</head>
+
+<body>
+    <header>
+        <div id="home" class="promoTop justify-content-center d-flex">
+            <p class="font-weight-bold">ENTREGA GRÁTIS* no seu primeiro pedido. Aproveite!</p>
+        </div>
+        <section class="menuDesktop">
+            <section class="menuDesktopP1 d-none d-lg-flex">
+                <div class="col-3">
+                    <a href="index.html"><img src="img/logo.png" style="height:5rem"></a>
+                </div>
+                <div class="col-5">
+                    <form class="form-inline my-2 my-lg-4 mx-lg-5">
+                        <input class="form-control mr-sm-2 col-9" type="search" placeholder="Nome do produto"
+                            aria-label="Pesquisar">
+                        <button class="font-weight-bold btn btn-outline-success my-2 my-sm-0"
+                            type="submit">Busca</button>
+                    </form>
+                </div>
+                <div class="col-2 text-right">
+                    <div class="btn-group ">
+                        <a class="btn dropdown-toggle my-lg-4" data-toggle="dropdown" href="#"><img class="mr-1"
+                                src="img/conta.svg" height="30px">Minha conta</a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><img class="mr-2" src="img/entrar.svg"
+                                    height="30px">Entrar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="cadastro.html"><img class="mr-2" src="img/criar.svg"
+                                    height="30px">Criar
+                                conta</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div>
+                        <a class="btn my-lg-4" data-toggle="dropdown" href="#"><img class="mr-1" src="img/cesta.svg"
+                                height="30px">Cesta</a>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="menuDesktopP2 navbar navbar-expand-lg navbar-light d-none d-lg-flex">
+                <ul class="navbar-nav container">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><img class="mr-2" src="img/home.svg" height="30px">Home
+                            <span class="sr-only">(página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreNos.html"><img class="mr-2" src="img/sobre.svg"
+                                height="30px">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="mr-2"
+                                src="img/produtos.svg" height="30px">Produtos</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="produtos.html"> <img class="mr-2" src="img/feira.svg"
+                                    height="30px">Feira</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="produtos2.html">
+                                <img class="mr-2" src="img/mercearia.svg" height="30px">Mercearia</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="menuMobile">
+            <section class="menuMobileP1 d-lg-none d-flex">
+                <div class="col-3">
+                    <div class="btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><img class="mr-1"
+                                src="img/menu-button-wide.svg" height="30px"
+                                style="background-color: var(--cor-verde);"></a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><img class="mr-2" src="img/entrar.svg"
+                                    height="30px">Entrar</a>
+                            <a class="dropdown-item" href="cadastro.html"><img class="mr-2" src="img/criar.svg"
+                                    height="30px">Criar
+                                conta</a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" data-toggle="dropdown" href="index.html"><img class="mr-2"
+                                    src="img/home.svg" height="30px">Home<span class="sr-only">(página
+                                    atual)</span></a>
+                            <a class="dropdown-item" data-toggle="dropdown" href="sobreNos.html"><img class="mr-2"
+                                    src="img/sobre.svg" height="30px">Sobre Nós</a>
+                            <a class="btn dropdown-toggle ml-2" data-toggle="dropdown" href="#"><img class="mr-2"
+                                    src="img/produtos.svg" height="30px">Produtos</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="produtos.html"> <img class="mr-2" src="img/feira.svg"
+                                        height="30px">Feira</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="produtos2.html"><img class="mr-2" src="img/mercearia.svg"
+                                        height="30px">Mercearia</a>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <a href="index.html"><img src="img/logo.png" style="height:5rem"></a>
+                </div>
+                <div class="col-3">
+                    <a class="btn my-lg-4" data-toggle="dropdown" href="#"><img class="mr-1" src="img/cesta.svg"
+                            height="30px">Cesta</a>
+                </div>
+            </section>
+            <div class="d-lg-none d-block">
+                <form class="form-inline p-2 ml-4">
+                    <input class="form-control mx-2 col-9" type="search" placeholder="Nome do produto"
+                        aria-label="Pesquisar">
+                    <button class="btn btn-outline-success font-weight-bold" type="submit">Busca</button>
+                </form>
+            </div>
+            <div class="divisao d-lg-none d-block ">
+            </div>
+        </section>
+
+        <!-- banner -->
+
+        <div class="position-relative overflow-hidden bannerProdutos"></div>
+
+
+    </header>
+
+
+
+
+    <main class="rol">
+
+        <div class="container mt-5">
+            <div class="row ">
+                <div class=" menuFeira col-lg-2">
+                    <h2>Feira</h2>
+                    <ul class="nav flex-column" id="myTab" role="tablist" aria-orientation="vertical">
+                        <li>
+                            <a class="nav-link active" id="verduras-tab" data-toggle="tab" href="#verduras" role="tab"
+                                aria-controls="verduras" aria-selected="true">Verduras e Temperos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="legumes-tab" data-toggle="tab" href="#legumes" role="tab"
+                                aria-controls="legumes" aria-selected="false">Legumes</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link" id="frutas-tab" data-toggle="tab" href="#frutas" role="tab"
+                                aria-controls="frutas" aria-selected="false">Frutas</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="cogumelos-tab" data-toggle="tab" href="#cogumelos" role="tab"
+                                aria-controls="cogumelos" aria-selected="false">Cogumelos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="verduras" role="tabpanel" aria-labelledby="verduras-tab">
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="fotos card my-3" style="width: 250px;">
+                                    <img src="img/Feira/brocolis.jpg" alt="brocolis">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Brócolis Orgânico - Unidade</p>
+                                        <h5 class="card-title">R$ 5,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="fotos card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/alho.jpg" alt="alho">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Alho Orgânico - 100gr</p>
+                                        <h5 class="card-title">R$ 10,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/salsinha.jpg" alt="salsinha">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Salsinha Orgânica - Maço </p>
+                                        <h5 class="card-title">R$ 2,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/pimenta.jpg" alt="pimentaDedoDeMoca">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Pimenta Dedo de Moça Orgânica - 100gr</p>
+                                        <h5 class="card-title">R$ 7,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/cebola.jpg" alt="cebola">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Cebola Orgânica - 1kg</p>
+                                        <h5 class="card-title">R$ 11,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/alfaceCrespa.jpg" alt="alfaceCrespa">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Alface Crespa Orgânica - Unidade</p>
+                                        <h5 class="card-title">R$ 4,40</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="img-fluid" src="img/Feira/repolho.jpg" alt="repolho">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Repolho Orgânico - Unidade</p>
+                                        <h5 class="card-title">R$ 7,50</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/couveFlor.jpg" alt="couveFlor">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Couve Flor Orgânica - Unidade </p>
+                                        <h5 class="card-title">R$ 11,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/couveKale.jpg" alt="couveKale">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Couve Kale Orgânica - Maço</p>
+                                        <h5 class="card-title">R$ 8,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="img-fluid" src="img/Feira/couveRabano.jpg" alt="couveRabano">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Couve Rabano Orgânica - Unidade</p>
+                                        <h5 class="card-title">R$ 7,50</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/alfaceRomana.png" alt="alfaceRomana">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Alface Romana Orgânica - Unidade </p>
+                                        <h5 class="card-title">R$ 5,80</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/almeiraoDeCabeca.png"
+                                        alt="almeiraoDeCabeca">
+                                        <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Almeirão de Cabeça Orgânico - Unidade</p>
+                                        <h5 class="card-title">R$ 7,50</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="legumes" role="tabpanel" aria-labelledby="legumes-tab">
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img src="img/Feira/tomateMolho.jpg" alt="tomateMolho">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Tomate Molho - 1kg</p>
+                                        <h5 class="card-title">R$ 5,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/tomateItaliano.jpg" alt="tomateItaliano">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Tomate Italiano Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 7,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/cenoura.png" alt="cenoura">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Cenoura Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 3,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/pimentaoColorido.jpg"
+                                        alt="pimentaoColorido">
+                                        <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Pimentão Colorido Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 7,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/berinjela.jpg" alt="berinjela">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Berinjela Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 5,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/aboboraCheirosa.jpg" alt="aboboraCheirosa">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Abóbora Cheirosa Orgânica - 700gr</p>
+                                        <h5 class="card-title">R$ 8,40</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/batataAsterix.jpg" alt="batataAsterix">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Batata Asterix Orgânica - 1kg</p>
+                                        <h5 class="card-title">R$ 15,80</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/batata.jpg" alt="batata">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Batata Inglesa Orgânica - 1kg</p>
+                                        <h5 class="card-title">R$ 13,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/ervilha.jpg" alt="ervilha">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Ervilha Orgânica - 500gr </p>
+                                        <h5 class="card-title">R$ 9,40</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="img-fluid" src="img/Feira/chuchu.png" alt="chuchu">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Chuchu Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 3,80</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/beterraba.jpg" alt="beterraba">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Beterraba Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 9,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="frutas" role="tabpanel" aria-labelledby="frutas-tab">
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img src="img/Feira/maca.jpg" alt="maça">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Maça Gala Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 11,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/bananaNanica.jpg" alt="bananaNanica">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Banana Nanina Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 6,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/mamaoFormosa.jpg" alt="mamaoFormosa">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Mamão Formosa Orgânico - 1kg</p>
+                                        <h5 class="card-title">R$ 12,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/uva.jpg" alt="pimentaoColorido">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Uva Isabel Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 11,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/morango.jpg" alt="morango">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Morango Orgânico - 250gr</p>
+                                        <h5 class="card-title">R$ 9,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/laranja.png" alt="laranja">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Laranja Orgânica - 1kg</p>
+                                        <h5 class="card-title">R$ 7,40</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/abacate.jpg" alt="abacate">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Abacate Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 18,80</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/tangerina.jpg" alt="tangerina">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Tangerina Orgânica - 500gr</p>
+                                        <h5 class="card-title">R$ 9,40</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/limao.jpg" alt="limao">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Limão Orgânico - 500gr </p>
+                                        <h5 class="card-title">R$ 5,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="img-fluid" src="img/Feira/maracuja.png" alt="maracuja">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Maracujá Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 5,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/melao.jpg" alt="melao">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Melão Orgânico - 1kg</p>
+                                        <h5 class="card-title">R$ 17,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/pessego.jpg" alt="pessego">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Pêssego Orgânico - 500gr</p>
+                                        <h5 class="card-title">R$ 287,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="cogumelos" role="tabpanel" aria-labelledby="cogumelos-tab">
+                            <div class="d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/paris.jpg" alt="cogumeloParis">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Cogumelo Paris Orgânico - 200gr</p>
+                                        <h5 class="card-title">R$ 8,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/shimeji.png" alt="cogumeloShimeji">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Cogumelo Shimeji Orgânico - 200gr</p>
+                                        <h5 class="card-title">R$ 15,90</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                                <div class="card my-3" style="width: 250px;">
+                                    <img class="card-img-top" src="img/Feira/shitake.png" alt="cogumeloShitake">
+                                    <img class="selo" src="img/selo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">Cogumelo Shitake Orgânico - 200gr</p>
+                                        <h5 class="card-title">R$ 13,40</h5>
+                                        <a href="#" class="btn btn-success">Adicionar à cesta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="botao-top"><a href="#home"><img class="imagem-botao" src="img/seta-para-cima.png"
+                    alt="seta-para-inicio"></a></button>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="rodape">
+            <section class="menuFooter">
+                <div>
+                    <ul>
+                        <h5>Minha conta</h5>
+                        <a href="#">
+                            <li>Entrar</li>
+                        </a>
+                        <a href="cadastro.html">
+                            <li>Criar conta</li>
+                        </a>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h5>Institucional</h5>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="sobreNos.html">
+                            <li>Sobre Nós</li>
+                        </a>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <h5>Produtos</h5>
+                        <a href="produtos.html">
+                            <li>Feira</li>
+                        </a>
+                        <a href="produtos2.html">
+                            <li>Mercearia</li>
+                        </a>
+                    </ul>
+
+                </div>
+            </section>
+            <section id="logo_footer">
+                <img src="img/logo.png" alt="Logo">
+            </section>
+            <section id="iconesRodape">
+                <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><img src="img/fb.svg"
+                        alt="Facebook"></a>
+                <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img src="img/ig.svg"
+                        alt="Instagram"></a>
+            </section>
+        </section>
+        <hr id="divideFooter">
+        <section class="avisos">
+            <p id="copyright">&copy; 2021. Todos os direitos reservados.</p>
+            <p> *Para compras acima de R$ 50,00. Preços, ofertas e condições válidos durante o dia de hoje, podendo
+                sofrer
+                alterações sem prévia notificação.</p>
+        </section>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <script src="js/botao_script.js"></script>
+
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
