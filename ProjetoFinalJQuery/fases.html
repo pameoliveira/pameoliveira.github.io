@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index_script.js"></script>
+    <script src="js/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+    <link rel="stylesheet" href="css/fases_style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/tabela.css">
+    <title>InfoVacina - Fases</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <!-- MENU DROP-->
+        <nav class="menu_drop" style="display: none;">
+            <div class="title">
+                <img id="menu_dropdown" src="img/menu_dropdown.png" alt="">
+            </div>
+            <div class="dropdown">
+                <ul>
+                    <a href="index.html">
+                        <li>INÍCIO</li>
+                    </a>
+                    <a href="sobre-nos.html">
+                        <li>QUEM SOMOS</li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>GALERIA</li>
+                    </a>
+                    <a href="fases.html">
+                        <li>FASES DE RETOMADA</li>
+                    </a>
+                    <a href="cadastro.html">
+                        <li>PRÉ-CADASTRO</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIM MENU DROP -->
+
+        <div class="box_menu_principal">
+            <nav id="menu-principal">
+                <ul>
+                    <a href="index.html">
+                        <li>INÍCIO</li>
+                    </a>
+                    <a href="sobre-nos.html">
+                        <li>QUEM SOMOS</li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>GALERIA</li>
+                    </a>
+                    <a href="fases.html">
+                        <li>FASES DE RETOMADA</li>
+                    </a>
+                    <a href="cadastro.html">
+                        <li>PRÉ-CADASTRO</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <section id="home" class="secao_logo">
+            <figure>
+                <img src="img/logo.png" alt="" id="logo_cabecalho">
+            </figure>
+            <div class="recursos">
+                <div id="mode">
+                    <a href="#" id="modoEscuro"><img src="img/contraste_icon.png" alt="" title="Modo Escuro"
+                            style="height: 20px;"></a>
+                    <a href="#" id="aumentarFonte" onclick="aumentarFonte()"><img src=" img/aumentar_fonte.png" alt="" title="Aumentar Fonte"
+                        style="height: 20px;"></a>
+                    <a href="#" id="diminuirFonte" onclick="diminuirFonte()"><img src=" img/diminuir_fonte.png" alt="" title="Diminuir Fonte"
+                        style="height: 20px;"></a>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <section id="banner_fases">
+        <h1 id="titulo_banner_index">#InfoVacina</h1>
+    </section>
+
+
+    <main class="principal">
+        <section class="sessao-monitoramento">
+            <h1 class="titulo-principal">Monitoramento COVID-19</h1>
+            <section id="posicao_relogio">
+                <div id="data-hora"></div>
+            </section>
+        </section>
+
+        <section class="sessao-internacoes">
+            <h2 class="subtitulo-principal">Internações Hospitais</h2>
+        </section>
+
+        <section class="sessao-atualizacao">
+            <p>Última atualização: 23 de agosto às 07h50</p>
+        </section>
+
+        <section class="sessao-leitos">
+            <section class="sessao-leitos1">
+                <section class="informa-setor">
+                    <label class="label-setor">Informe o setor:</label>
+
+                    <select name="setor" id="setor">
+                        <option id="setor1" value="setor1">Campinas</option>
+                        <option id="setor2" value="setor2">Piracicaba</option>
+                        <option id="setor3" value="setor3">Sorocaba</option>
+                    </select>
+                    <br>
+                    <label>Informe o Nº de leitos ocupados:</label>
+                    <input class="input-leitos" id="enfermaria" type="text" placeholder="Enfermaria">
+                    <input class="input-leitos" type="text" placeholder="UTI" id="uti">
+
+                    <button class="botao-calcular" onclick="fases()">Calcular</button>
+                </section>
+            </section>
+
+            <section class=" insira-dados">
+                <h3 class="titulo-sessao-leitos aux1"></h3>
+                <p>Leitos UTI</p>
+                <h3 class="titulo-sessao-leitos aux2"></h3>
+                <p>Leitos Enfermaria</p>
+                <section class="bolinha"></section>
+                <p class="paragrafo-porcentagem"></p>
+                <p></p>
+                <p class="leitos-oculpados2"></p>
+            </section>
+
+            <section class="sessao-leitos2 ">
+                <h3 class="titulo-insira-dados">Insira os dados para obter as informações sobre a fase atual do seu
+                    setor.</h3>
+            </section>
+
+            <section class="sessao-leitos3">
+                <section class="teste">
+                    <section class="bolinha1"></section>
+                    <section>
+                        <p>Fase 1 - Alerta Máximo</p>
+                        <p>Acima de 80%</p>
+                    </section>
+                </section>
+
+                <section class="teste">
+                    <section class="bolinha2"></section>
+                    <section>
+                        <p>Fase 2 - Controle</p>
+                        <p>Entre 80% e 70%</p>
+                    </section>
+                </section>
+
+                <section class="teste">
+                    <section class="bolinha3"></section>
+                    <section>
+                        <p>Fase 3 - Flexibilização</p>
+                        <p>Entre 70% e 60%</p>
+                    </section>
+                </section>
+
+                <section class="teste">
+                    <section class="bolinha4"></section>
+                    <section>
+                        <p>Fase 4 - Abertura parcial</p>
+                        <p>Abaixo de 60%</p>
+                    </section>
+                </section>
+
+                <section class="teste">
+                    <section class="bolinha5"></section>
+                    <section>
+                        <p>Fase 5 - Controlado</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- BOTÃO slideToggle PARA MOSTRAR OU ESCONDER O CONTEUDO NA TELA -->
+        <h1 class="titulo-criterios-frases">Clique aqui e entenda os Critérios e fases</h1>
+        <section class="criterios-frases">
+
+            <section class="criterios-fases-pt1">
+                <p class="paragrafo1-criterios-fases-pt1">A retomada consciente dos setores da economia começa a
+                    funcionar em 1º de junho. O estado está
+                    dividido em 17 Departamentos Regionais de Saúde, que estão categorizados segundo uma escola de cinco
+                    níveis de abertura econômica.
+                </p>
+
+                <p class="paragrafo1-criterios-fases-pt2">Cada região poderá reabrir determinados setores de acordo com
+                    a fase em que se encontra. As regras
+                    são: média da taxa de ocupação de leitos de UTI exclusivas para pacientes com coronavírus, número de
+                    novas internações no mesmo período e o número de óbitos.</p>
+            </section>
+
+            <section class="criterios-fases-pt2">
+                <p class="paragrafo1-criterios-fases-pt3">A requalificação de fase para mais restritiva será feita
+                    semanalmente, caso a região tenha piora nos
+                    índices. Para que haja uma promoção a uma fase com menos restrições e mais aberturas, serão
+                    necessárias duas semanas.</p>
+
+
+                <p class="paragrafo1-criterios-fases-pt4">O Plano São Paulo dá autonomia para que prefeitos aumentem as
+                    restrições de acordo com os limites
+                    estabelecidos pelo Estado.</p>
+            </section>
+        </section>
+
+        <section class="tabela">
+            <h2 class="titulo-tabela">Abertura dos setores da economia de acordo com as fases</h2>
+            <!-- check: &#10004; not: &#10008;  -->
+            <table class="container">
+                <tr>
+                    <th>Setores temáticos</th>
+                    <th style="background-color: red; width: 130px;">Fase 1</th>
+                    <th style="background-color: orange;">Fase 2</th>
+                    <th style="background-color: yellow;">Fase 3</th>
+                    <th style="background-color: green;">Fase 4</th>
+                    <th style="background-color: blue; width: 130px;">Fase 5</th>
+                </tr>
+                <tr>
+                    <th><img src="img/icons/tree_conifer.png" alt=""> Espaços públicos</th>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Atividades imobiliárias</th>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                    <td class="check">&#10004</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Concessionárias</th>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                    <td class="check">&#10004</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Escritórios</th>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                    <td class="check">&#10004</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Bares e Restaurantes e similares</th>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Comércios</th>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Shoppings Centers</th>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Salões de Beleza</th>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Academias</th>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="restr">Aberto com restrições</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Teatros e Cinemas</th>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Eventos que geram aglomeração</th>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="not">&#10008</td>
+                    <td class="check">&#10004</td>
+                </tr>
+                <tr>
+                    <th>Educação</th>
+                    <td colspan="5" rowspan="2" style="background-color: rgb(207, 207, 207);">A ser definido</td>
+                </tr>
+                <tr>
+                    <th>Transporte</th>
+                </tr>
+            </table>
+        </section>
+        <!-- BOTÃO scrollTop PARA APARECER OU DESAPARECER QUANDO ROLAR O SCROLL DA PÁGINA -->
+        <button class="botao-top"><a href="#home"><img class="imagem-botao" src="./img/seta-para-cima.png"
+                    alt="seta-para-inicio"></a></button>
+    </main>
+    <footer class="rodape">
+        <figure id="logo_rodape">
+            <img src="img/logo.png" alt="" id="logo_cabecalho">
+        </figure>
+        <span id="copyright">&copy; 2021. Todos os direitos reservados.</span>
+        <div id="icones_rodape">
+            <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><img src="img/facebook-icon.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img src="img/instagram-icon.png"
+                    alt="" id="ig"></a>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="js/fases_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/galeria_script.js"></script>
+    <script src="js/index_script.js"></script>
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/galeria_style.css">
+    <title>InfoVacina - Galeria</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <!-- MENU DROP-->
+        <nav class="menu_drop" style="display: none;">
+            <div class="title">
+                <img id="menu_dropdown" src="img/menu_dropdown.png" alt="">
+            </div>
+            <div class="dropdown">
+                <ul>
+                    <a href="index.html">
+                        <li>INÍCIO</li>
+                    </a>
+                    <a href="sobre-nos.html">
+                        <li>QUEM SOMOS</li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>GALERIA</li>
+                    </a>
+                    <a href="fases.html">
+                        <li>FASES DE RETOMADA</li>
+                    </a>
+                    <a href="cadastro.html">
+                        <li>PRÉ-CADASTRO</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIM MENU DROP -->
+
+        <div class="box_menu_principal">
+            <nav id="menu-principal">
+                <ul>
+                    <a href="index.html">
+                        <li>INÍCIO</li>
+                    </a>
+                    <a href="sobre-nos.html">
+                        <li>QUEM SOMOS</li>
+                    </a>
+                    <a href="galeria.html">
+                        <li>GALERIA</li>
+                    </a>
+                    <a href="fases.html">
+                        <li>FASES DE RETOMADA</li>
+                    </a>
+                    <a href="cadastro.html">
+                        <li>PRÉ-CADASTRO</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <section id="home" class="secao_logo">
+            <figure>
+                <img  src="img/logo.png" alt="" id="logo_cabecalho">
+            </figure>
+            <div class="recursos">
+                <div id="mode">
+                    <a href="#" id="modoEscuro"><img src="img/contraste_icon.png" alt="" title="Modo Escuro"
+                            style="height: 20px;"></a>
+                    <a href="#" id="aumentarFonte" onclick="aumentarFonte()"><img src=" img/aumentar_fonte.png" alt="" title="Aumentar Fonte"
+                        style="height: 20px;"></a>
+                    <a href="#" id="diminuirFonte" onclick="diminuirFonte()"><img src=" img/diminuir_fonte.png" alt="" title="Diminuir Fonte"
+                        style="height: 20px;"></a>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <main id="main_galeria">
+        <section id="banner_galeria">
+            <h1 id="titulo_banner_index">#InfoVacina</h1>
+        </section>
+        <section id="posicao_relogio">
+            <div id="data-hora"></div>
+        </section>       
+            <section id="conteudo_galeria">
+                <section id="cabecalho_conteudo">
+                    <h2 class="titulo_galeria">Primeiros vacinados contra a Covid-19 no Brasil e no mundo</h2>
+
+                    <section id="contagem">
+                        <p><span id="contagem_valor">1</span>/10 <b>Imunização contra a doença começa por idosos e
+                                profissionais
+                                de
+                                saúde</b></p>
+                    </section>
+                </section>
+
+                <section id="fotos">
+                    <button onclick="slide_back()" class="seta"><img src="img/seta_esquerda.png" alt=""></button>
+                    <figure id="carrossel">
+                        <img id="Mônica Calazans, Brasil"
+                            src="https://s2.glbimg.com/rpnDUSVjCB4VurWpS1504N_A8II=/0x0:3000x2000/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/T/N/ZRt1ygSLeAfaaUDYJ7nA/ap21017693364267.jpg"
+                            alt="A enfermeira Mônica Calazans, de 54 anos, mostra seu cartão de vacinação após ser a primeira brasileira a receber a vacina CoronaVac no Hospital das Clínicas, em São Paulo, no dia 17 de janeiro" />
+                        <img id="Zulema Riquelme, Chile"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091711425fea00c6a6530_1609171142_3x2_md.jpg"
+                            alt="Primeira pessoa a ser vacinada contra a Covid-19 no Chile, a técnica em enfermagem Zulema Riquelme, 46, é imunizada no Hospital Metropolitano de Santiago no dia 24 de dezembro " />
+                        <img id="María Ramírez, México"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091710835fea008b962ef_1609171083_3x2_md.jpg"
+                            alt="María Irene Ramírez, chefe da enfermaria da UTI do Hospital Geral do México, é a primeira pessoa a ser imunizada contra a doença no país, em 24 de dezembro" />
+                        <img id="Claudia Alivernini, Itália"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091710835fea008bdfb22_1609171083_3x2_md.jpg"
+                            alt="A enfermeira Claudia Alivernini fala à imprensa após receber a primeira dose da vacina contra a Covid-19 aplicada na Itália, no dia 27 de dezembro" />
+                        <img id="Margaret Keenan, Inglaterra"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091709045fe9ffd8b05f3_1609170904_3x2_md.jpg"
+                            alt="Margaret Keenan, 90, é aplaudida em hospital em Coventry, na Inglaterra, após se tornar a primeira pessoa imunizada contra a Covid-19 no país, no dia 8 de dezembro" />
+                        <img id="Sandra Lindsay, EUA"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091709055fe9ffd9017eb_1609170905_3x2_md.jpg"
+                            alt="A enfermeira Sandra Lindsay, de Nova York, é a primeira pessoa a receber a vacina contra a Covid-19 nos EUA, no dia 14 de dezembro " />
+                        <img id="Araceli Hidalgo, Espanha"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091709165fe9ffe4c7e4f_1609170916_3x2_md.jpg"
+                            alt="Moradora de um residencial para idosos, Araceli Hidalgo, 96, recebe a primeira vacina contra o coronavírus aplicada na Espanha " />
+                        <img id="Alicja Jakubowska, Polônia"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091709175fe9ffe520483_1609170917_3x2_md.jpg"
+                            alt="A enfermeira Alicja Jakubowska recebe a primeira dose da vacina contra a Covid-19 aplicada na Polônia, em Varsóvia, no dia 27 de dezembro" />
+                        <img id="Efstathia Kambissiouli, Grécia"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091704225fe9fdf6dc1a4_1609170422_3x2_md.jpg"
+                            alt="Em Atenas, a enfermeira Efstathia Kambissiouli é a primeira pessoa imunizada contra o coronavírus na Grécia, em 27 de dezembro" />
+                        <img id="Branka Anicic, Croácia"
+                            src="https://f.i.uol.com.br/fotografia/2020/12/28/16091704235fe9fdf7d7794_1609170423_3x2_md.jpg"
+                            alt="Moradora de um residencial para idosos em Zagreb, Branka Anicic, 81, é a primeira pessoa a ser vacinada contra a Covid-19 na Croácia" />
+                    </figure>
+                    <button onclick="slide()" class="seta"><img src="img/seta_direita.png" alt=""></button>
+                </section>
+                <section id="noticias_relacionadas">
+                    <h2>Notícias relacionadas</h2>
+                </section>
+
+                <section id="noticias">
+                    <div class="caixa_noticia"><a
+                            href="https://brasil.elpais.com/brasil/2021-08-17/brasil-avanca-com-a-vacina-no-braco-e-de-olho-no-carnaval.html"
+                            target="_blank"><img src="img/carnaval.jpg" alt="">Brasil avança com a vacina no braço e
+                            de
+                            olho
+                            no
+                            Carnaval</a>
+                    </div>
+                    <div class="caixa_noticia"> <a
+                            href="https://agenciabrasil.ebc.com.br/saude/noticia/2021-08/vacinacao-de-reforco-contra-covid-19-deve-comecar-por-idosos"
+                            target="_blank"><img src="img/idoso.jpg" alt="">Vacinação de reforço contra covid-19
+                            deve
+                            começar
+                            por idosos</a>
+                    </div>
+                    <div class="caixa_noticia"><a
+                            href="https://g1.globo.com/sp/campinas-regiao/noticia/2021/08/19/covid-19-pfizer-entrega-1-milhao-de-doses-da-vacina-ao-brasil-pelo-terceiro-dia-seguido.ghtml"
+                            target="_blank"><img src="img/vacinapfizer.jpeg" alt="">Covid-19: Pfizer entrega 1
+                            milhão de
+                            doses
+                            da vacina ao Brasil pelo terceiro dia</a>
+                    </div>
+                    <div class="caixa_noticia"><a
+                            href="https://agenciabrasil.ebc.com.br/saude/noticia/2021-08/ministro-da-saude-fala-sobre-aceleracao-da-campanha-de-vacinacao"
+                            target="_blank"><img src="img/brasil-recorde-vacina-capa-696x487.jpg" alt="">População
+                            adulta
+                            deve
+                            estar 100% vacinada até outubro, diz Queiroga</a>
+                    </div>
+                    <div class="caixa_noticia"><a
+                            href="https://www.uol.com.br/vivabem/noticias/redacao/2021/08/17/vacinacao-covid-19-coronavirus-17-de-agosto.htm"
+                            target="_blank"><img src="img/recorde.jpeg" alt="">Covid: Brasil vacina 2,7 milhões em
+                            24
+                            horas,
+                            2ª
+                            maior marca na pandemia</a>
+                    </div>
+                    <div class="caixa_noticia">
+                        <a href=" https://agenciabrasil.ebc.com.br/saude/noticia/2021-08/pais-atinge-50-milhoes-de-pessoas-com-vacinacao-completa-contra-covid"
+                            target="_blank"><img src="img/vacinação.jpg" alt="">País atinge 50 milhões de pessoas
+                            com
+                            vacinação
+                            completa contra covid</a>
+                    </div>
+                </section>
+            </section>
+        
+        </section>
+        <button class="botao-top"><a href="#home"><img class="imagem-botao" src="./img/seta-para-cima.png"
+                    alt="seta-para-inicio"></a></button>
+    </main>
+    <footer class="rodape">
+        <figure id="logo_rodape">
+            <img src="img/logo.png" alt="" id="logo_cabecalho">
+        </figure>
+        <span id="copyright">&copy; 2021. Todos os direitos reservados.</span>
+        <div id="icones_rodape">
+            <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><img src="img/facebook-icon.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img src="img/instagram-icon.png"
+                    alt="" id="ig"></a>
+        </div>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;  
+    
+}
+body{
+  background-color: #ECF0F1;
+}
+
+#main_quemsomos{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#banner_quemsomos {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(../img/banner_galeria.jpg);
+  background-position:center center;
+  background-size: cover;
+  background-color: whitesmoke;
+  margin-bottom: 5vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quemSomos {
+  margin: 0 auto;
+  align-content: center;
+  
+}
+.qsTitulo {
+  background-color: #2980B9;
+  width: 150px;
+  margin: 20px auto;
+  padding: 7px;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.966);
+}
+#divBtn {
+  margin: 30px auto;
+  text-align: center;
+}
+#btnAjuda {
+  background-color: #2980B9;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.966);
+  font-weight: bold;
+  cursor: pointer;
+}
+#divAjuda{
+  margin: 10px auto;
+  text-align: center;
+  display: none;
+  
+}
+#mvv p {
+  text-align: center;
+  color:#2C3E50 ;
+  
+}
+#mvv {
+  background-color: rgb(223, 223, 223);
+  display: flex;  
+  flex-wrap: row wrap; 
+  margin: 30px 60px;
+  
+}
+.imgmvv {
+  width: 110px;
+  /* transition: all 0.5s;
+  border: 10px solid transparent; */
+}
+/* .imgmvv:hover {
+  border: 2px solid #818181;
+  border-radius: 50%;
+} */
+
+.missao {
+  flex: 1;
+  text-align: center;
+  width:200px;  
+  margin: 50px;
+}
+
+.missao:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.missao ul li {
+  list-style-type: none;
+  color: #2C3E50;
+}
+#fundadores {
+  background-color: rgb(223, 223, 223);
+  /* display: flex;
+  flex: auto; */
+  margin: 30px 60px;
+  padding: 10px;
+}
+.divFundadores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 60px;
+}
+.imgFundadores {
+  width: 150px;
+  border-radius: 100%;
+}
+.nomeFundadores {
+  color: #E74C3C;
+  font-weight: bold;
+  margin: 10px;
+}
+.pFundadores {
+  width: 50%;
+  color: #2C3E50;
+}
+
+@media screen and (max-width: 850px){
+  #banner_quemsomos h1{
+      font-size: 9vw;
+  }
+
+  #mvv {
+    flex-wrap: wrap;    
+  }
+}
