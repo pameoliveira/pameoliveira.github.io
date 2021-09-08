@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/cambio_style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/cambio.js"></script>
+    <script src="js/script.js"></script>
+    <title>SoulViajante - Câmbio de Moedas</title>
+</head>
+
+<body>
+    <header>
+        <section class="container">
+
+            <div class="cabecalho_fixo">
+                <!-- Adicionado para ter o menu dropdown -->
+                <nav class="menu">
+                    <div class="title" onclick="menu_dropdown()">
+                        <img id="menu_dropdown" src="img/menu_dropdown.png" alt="">
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="dropdown">
+                        <!-- <p>Inbox <span class="fa fa-inbox"></span></p>
+                      <p>Settings <span class="fa fa-gear"></span></p>
+                      <p>Sign Out <span class="fa fa-sign-out"></span></p> -->
+                        <ul>
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="calculadora.html">
+                                <li>Planeje sua Viagem</li>
+                            </a>
+                            <a href="cambio.html">
+                                <li>Taxas de Câmbio</li>
+                            </a>
+                            <a href="cadastro.html">
+                                <li>Cadastre-se</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+                <div>
+                    <a href="index.html"><img src="img/logo.png" alt="" id="img_logo"></a>
+                </div>
+                <div class="box_menu">
+                    <nav class="menu_principal">
+                        <ul>
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="calculadora.html">
+                                <li>Planeje sua Viagem</li>
+                            </a>
+                            <a href="cambio.html">
+                                <li>Taxas de Câmbio</li>
+                            </a>
+                            <a href="cadastro.html"><button id="botao_cadastro">Cadastre-se</button></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </section>
+        <section class="banner_topo_converte">
+        </section>
+    </header>
+
+    <main>
+        <section class="titulo_corpo">
+            <h1>Conversor de Moedas</h1>
+        </section>
+
+        <section class="conteudo_converte">
+
+            <section class="titulo_corpo">
+                <p>Faça a conversão de valores entre as principais moedas do mundo.</p>
+            </section>
+
+            <section class="converte">
+
+                <div><label for="valor"><img src="./img/money_icon.png" alt=""> Valor: </label>
+                    <input type="text" id="valor" onkeydown="fMasc( this, mValor )" placeholder="Valor">
+                </div>
+                <div class="moedas">
+                    <div>
+                        <label for="opcoes1"> Converte de: </label>
+                        <select id="opcoes1">
+                            <option>Moeda</option>
+                            <option>Dólar Americano</option>
+                            <option>Dólar Canadense</option>
+                            <option>Euro</option>
+                            <option>Libra Esterlina</option>
+                            <option>Peso Argentino</option>
+                            <option>Real</option>
+                        </select><br />
+                    </div>
+
+                    <button id="btn2"><img src="./img/arrow_icon.png" alt=""></button>
+
+                    <div>
+                        <select id="opcoes2">
+                            <option>Moeda</option>
+                            <option>Dólar Americano</option>
+                            <option>Dólar Canadense</option>
+                            <option>Euro</option>
+                            <option>Libra Esterlina</option>
+                            <option>Peso Argentino</option>
+                            <option>Real</option>
+                        </select><br />
+                    </div>
+                </div>
+                <div>
+                    <section>
+                        <button id="btn1" onClick="converte()"><img src="./img/igual_icon.png" alt=""></button>
+                    </section>
+                </div>
+
+            </section>
+
+            <section>
+                <div class="resultado_conversao">
+                    <div id="valor_final"> </div>
+                </div>
+            </section>
+
+            <section class="tabelas_converte">
+                <table>
+                    <tr>
+                        <p id="cot"><b>COTAÇÃO</b></p>
+                    </tr> <br>
+                    <tr>
+                        <p id="cot2">Cotação de 16/03/2021</p>
+                    </tr> <br>
+                    <tr>
+                        <td style="width: 300px;">MOEDA</td>
+                        <td>
+                            <p>COTAÇÃO</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Dólar Americano</p>
+                        </td>
+                        <td>
+                            <p>5.60</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Dólar Canadense</p>
+                        </td>
+                        <td>
+                            <p>4.52</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Euro</p>
+                        </td>
+                        <td>
+                            <p>6.70</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Libra Esterlina</p>
+                        </td>
+                        <td>
+                            <p>7.81</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Peso Argentino</p>
+                        </td>
+                        <td>
+                            <p>0.062</p>
+                        </td>
+                    </tr>
+
+                </table>
+
+                </table>
+            </section>
+
+        </section>
+    </main>
+
+
+    <section class="titulo_corpo">
+    </section>
+
+    <footer class="rodape">
+
+        <div>
+            <img src="img/logo.png" alt="" id="logo_rodape">
+        </div>
+
+        <div>
+            <p> &copy; 2021 - Todos os direitos reservados.</p>
+        </div>
+
+        <div class="icones_rodape">
+            <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><img src="img/facebook-icon.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img src="img/instagram-icon.png"
+                    alt=""></a>
+        </div>
+
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+</html>

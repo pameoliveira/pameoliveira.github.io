@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro_estilo.css">
+    <script src="./js/cadastro.js"></script>
+    <script src="js/script.js"></script>
+    <title>SoulViajante - Cadastre-se</title>
+</head>
+
+<body>  
+    <header>
+        <section class="container">
+            <div class="cabecalho_fixo">
+                <!-- Adicionado para ter o menu dropdown -->
+                <nav class="menu">
+                    <div class="title" onclick="menu_dropdown()">
+                        <img id="menu_dropdown" src="img/menu_dropdown.png" alt="">
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="dropdown">
+                        <!-- <p>Inbox <span class="fa fa-inbox"></span></p>
+                      <p>Settings <span class="fa fa-gear"></span></p>
+                      <p>Sign Out <span class="fa fa-sign-out"></span></p> -->
+                        <ul>
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="calculadora.html">
+                                <li>Planeje sua Viagem</li>
+                            </a>
+                            <a href="cambio.html">
+                                <li>Taxas de Câmbio</li>
+                            </a>
+                            <a href="cadastro.html">
+                                <li>Cadastre-se</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+                <div>
+                    <a href="index.html"><img src="img/logo.png" alt="" id="img_logo"></a>
+                </div>
+                <div class="box_menu">
+                    <nav class="menu_principal">
+                        <ul>
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="calculadora.html">
+                                <li>Planeje sua Viagem</li>
+                            </a>
+                            <a href="cambio.html">
+                                <li>Taxas de Câmbio</li>
+                            </a>
+                            <a href="cadastro.html"><button id="botao_cadastro">Cadastre-se</button></a>
+                        </ul>
+                    </nav>                    
+                </div>              
+            </div>
+            
+        </section>
+            <section class="banner_topo_cadastro">
+        </section>
+    </header>
+
+    <main >
+        <section class="cadastro">
+            <section id="center">
+                <h3>Cadastro</h3>
+                <br>
+                <form>
+                    <input id="nome" type="text" placeholder="Nome" onblur="valida_nome(this)"><br>
+                    <input id="cpf" type="text" placeholder="CPF" maxlength="14" onkeydown="fMasc( this, mCPF )"
+                        onblur="valida_cpf(this)"><br>
+                    <input id="data_nascimento" type="date" placeholder="Data de nascimento"
+                        onblur="valida_idade(this)"><br>
+                    <input id="email" type="text" placeholder="E-mail" onblur="valida_email(this)"><br>
+                    <select name="sexo" id="sexo" onblur="valida_sexo(this)">
+                        <option value="">Selecione o sexo</option>
+                        <option value="do sexo masculino">Masculino</option>
+                        <option value="do sexo feminino">Feminino</option>
+                        <option value="não binária">Outros</option>
+                    </select>
+
+                    <button type="button" onclick="enviar_dados()">Enviar</button>
+                </form>
+            </section>               
+        </section>
+          
+        <section id="print">
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div>
+            <img src="img/logo.png" alt="" id="logo_rodape">
+        </div>
+
+        <div>
+            <p> &copy; 2021 - Todos os direitos reservados.</p>
+        </div>
+
+        <div class="icones_rodape">
+            <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><img src="img/facebook-icon.png" alt=""></a>
+            <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img src="img/instagram-icon.png" alt=""></a>
+        </div>
+
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+
+</html>
