@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;    
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {  
+    background-color: rgb(245, 245, 255);
+}
+
+.container {
+    background-color: rgb(25, 111, 165);
+    width: 100%;   
+    position: fixed;
+    top: 0;   
+}
+
+.cabecalho_fixo {
+    display: flex;
+    justify-content: space-around; /*espaço mais igual entre os itens */
+    height: 60px;
+    align-items: center;
+}
+
+#img_logo {
+    height: 46px;
+}
+
+.menu_principal a {
+    margin: 15px;  
+}
+
+#botao_cadastro {
+    padding: 8px; 
+    border-radius: 20px;
+    border-style: none;
+    font-size: large;
+    color: rgb(25, 111, 165);
+    background-color: white;
+    cursor: pointer;
+}
+
+.menu_principal a li {
+    padding: 5px;   
+    display: inline;
+    color: white;
+    font-size: large;
+    list-style: none;
+}
+
+.menu_principal a:hover{
+    background-color: rgba(246, 171, 27, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+/*  */
+
+.banner_topo {
+    background-image: url(../img/banner_topo.jpg);
+    height: 400px;
+    background-position: center;   
+}
+
+.nossos_pacotes, .conheca_empresa {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.boxes {
+    display: flex;
+    margin-top: 15px;
+}
+
+.boxes div {
+    /* background-color: mediumblue; */
+    box-shadow: 2px 2px 2px rgb(180, 167, 167);
+    background-color: white;
+}
+
+.box {
+    text-align: center;    
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 5px;    
+}
+
+.box li{
+    list-style: none;
+}
+
+.box img {
+    width: 100%;
+    height: 55%;
+}
+
+.button_pacotes {
+    padding: 10px;
+    width: 10vw;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgb(162, 243, 162);
+    box-shadow: 1px 1px 1px rgb(180, 167, 167);
+    cursor: pointer;
+}
+
+.banner_meio {
+    background-image: url(../img/banner_meio.jpg);
+    background-position: center; /*centraliza a imagem no width - fica na largura da página*/ 
+    height: 570px;    
+    margin-top: 30px;
+    padding-top: 5vh;
+    background-attachment: fixed;
+}
+
+.banner_meio h1 {
+    font-size: xx-large;
+    color: white;
+}
+
+.mais_info {
+    display: flex;
+}
+
+/* .fundadores { */
+    /* background-image: url(img/div1.png); */
+    /* background-position: cover; */
+/* } */
+
+/* .desenvolvimento { */
+    /* background-image: url(img/div3.png); */
+/* } */
+
+.mais_info div {
+    height: auto;
+    margin: 5%;
+    padding: 3%;
+    text-align: justify;
+    box-shadow: 2px 2px 2px rgb(180, 167, 167);
+    background-color: rgb(176, 245, 241);  
+}
+
+.rodape {
+    background: rgb(25, 111, 165);
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  /*alinha na horizontal  */
+    color: white;
+}
+
+.rodape img{
+    margin-left: 2vw; 
+}
+
+#logo_rodape {
+    height: 70px;
+}
+
+/*Respondividade */
+
+@media (max-width:860px){
+    .banner_topo {   
+        background-size: cover;       
+    } 
+
+    .boxes {
+        flex-direction: column; 
+        margin: 0 auto;  
+        width: 45vw;
+    }  
+
+    .button_pacotes {        
+        width: 15vw;       
+    }
+
+    .banner_meio { 
+        background-size: cover; 
+        padding-top: 18vh;
+    } 
+
+    .mais_info {
+        flex-wrap: wrap;
+    }    
+   
+    .banner_meio img{ 
+        height: 340px;   
+    }     
+}
+
+
+@media (max-width:700px){ 
+    .boxes {      
+        width: 47vw;
+    } 
+    
+    .rodape {
+        height: 160px;
+        line-height: 2;            
+        display: block;        
+    }  
+    
+    #logo_rodape {
+        height: 60px;
+    }
+}
+
+@media (max-width:620px){ 
+    .boxes {      
+        width: 50vw;
+    } 
+
+    .button_pacotes {        
+        width: 17vw;       
+    }
+
+    .banner_meio { 
+        padding-top: 25vh;
+    } 
+
+    .banner_meio img{
+        height: 260px;   
+    }
+    
+}
+
+
+@media (max-width:570px){ 
+    .boxes {      
+        width: 55vw;
+    }  
+
+    .button_pacotes {        
+        width: 18vw;       
+    }
+}
+
+/* Menu cascata */
+
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+
+/* O que o código abaixo faz é simples: por padrão, o elemento que possui a classe menu-toggler é escondido. Ele só aparece em dispositivos com telas que tenham um tamanho de, no máximo, 500px. */
+
+
+.box_menu{
+    display: flex;
+    align-items: center;    
+}
+
+.menu {       
+    display: inline-block;
+    margin: auto 0;
+    cursor:pointer
+}
+
+.menu {
+    display: none;
+}
+  
+@media screen and (max-width: 899px) {
+    .menu {
+      display: inline;      
+    }
+}
+
+.menu_principal {
+    display: none;
+}
+  
+@media screen and (min-width: 900px) {
+    .menu_principal {
+      display: flex;
+    }
+}
+
+.title{
+    display: flex;
+    width:50px;
+    justify-content: left;
+    align-items: center;
+    box-sizing:border-box;
+    background:#fff;
+    padding:10px;
+    border-radius:4px;
+    /* position:relative; */
+    box-shadow:0 0 40px -10px #000;
+    color:#505050;    
+}
+
+.menu .dropdown{
+    background:#fff;
+    border-radius:4px;
+    box-shadow:0 0 40px -10px #000;
+    color:#505050;
+    margin-top:5px;
+    max-height:0;
+    overflow:hidden;
+    transition:all .5s
+}
+
+.menu .down{
+    max-height:210px;
+}
+
+.menu #menu_dropdown{
+    width: 20px;    
+}
+
+.arrow{
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-bottom:10px solid #fff;
+    position:absolute;
+    right:20px;
+    bottom:-24px;
+    display:none
+}
+
+.menu .arrow.gone{
+    display:block
+}
+
+.menu li{
+    text-decoration: none;
+    color: rgba(31, 2, 2, 0.8);
+    padding:15px 14px;
+    margin:0;
+    transition:all .1s;
+    list-style: none;
+}
+
+.menu li:hover{
+    background:rgba(246, 171, 27, 1);
+    /* -webkit-transform:scale(1.05); */
+    color: #000;
+    box-shadow:0 0 30px -10px #000
+}
+
+
+
+
