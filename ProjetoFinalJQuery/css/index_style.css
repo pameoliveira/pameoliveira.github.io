@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --cor-principal:#3498DB;
+    --cor-aux2: #2980B9;
+    --cor-aux1:#2C3E50;
+    --cor-detalhes:#E74C3C;
+    --cor-body:#ECF0F1;
+}
+
+body {
+    background-color: var(--cor-body);
+
+}
+
+.container_index {
+    width: 80%;
+    background-color: var(--cor-body);
+    margin: 0 auto;
+    padding: 1%;
+    border-bottom: 1px solid var(--cor-aux1);
+    margin-bottom: 5vh;
+}
+
+.cabecalho {
+    background-color:var(--cor-principal);
+    /* background-color: #e07802; */
+    /* background: linear-gradient(rgba(0,0,0,.30), rgb(255, 255, 255)), url(../img/banner_index.jpg);
+    background-size: cover; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+#menu-principal ul a {
+    display: inline-flex;
+    list-style: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 1vw;
+    position: relative;
+    padding: 0 10px;
+}
+
+/* MENU HOVER */
+#menu-principal a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--cor-aux1);
+    height: 1px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+#menu-principal a:hover {
+    color: var(--cor-detalhes);
+    transition: 0.3s;
+}
+
+#menu-principal a:hover:after {
+    width: 100%;
+}
+/* MENU HOVER */
+
+#logo_cabecalho {
+    height: 90px;
+}
+
+#banner_index {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(../img/banner_index.jpg);
+    background-size: cover;
+    background-color: white;
+    margin-bottom: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo_banner_index {
+    font-size: 15vh;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(3, 46, 8, 1);
+}
+
+#posicao_relogio{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;  
+    padding-right: 50px;   
+    font-size: 20px;
+    font-weight: bold;  
+}
+
+
+
+.alerta_index {
+    /* background-color: #1c6278; */
+    background-color: var(--cor-detalhes);
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+    
+}
+
+#img_alerta {
+    height: 50px;
+    margin: 1%;
+}
+
+#texto_alerta {
+    font-size: 3vh;
+    color: white;
+}
+
+#botao_alerta {
+    background-color: white;
+    border: none;
+    padding: 3%;
+    cursor: pointer;
+    color: #1c6278;
+}
+
+#secao_vacinometro {   
+    width: 70%;
+    margin: 0 auto;   
+    height: 300px;
+    background-color: var( --cor-aux2);
+    text-align: center;
+    color: white;
+    margin-bottom: 70px;
+}
+
+#vaciometro{   
+    font-size: xx-large;
+    padding:20px ;  
+}
+
+#doses_aplicadas{
+    width: 200px;
+    height: 80px;
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: var(--cor-body);
+    border-radius: 5px;
+    border: 2px;
+    border-color: var(--cor-aux1);
+}
+
+#doses_aplicadas p{
+    font-size: xx-large;
+    color: black
+}
+
+
+#accordion{
+    width: 100%;
+}
+
+#accordion div{
+    line-height:1.5;
+    text-align: justify; 
+}
+
+#accordion li{
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+#accordion p{
+    margin-bottom: 10px;
+}
+
+
+#accordion h2{
+    background-color:var(--cor-detalhes);
+}
+
+#img_prevencao{
+    display: flex;
+    justify-content: center;
+}
+
+#accordion img{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#protocolos ol{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+#cuidados_index {
+    background-color: var(--cor-aux1);
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    color: white;
+    padding: 3%;
+}
+
+#texto_linha1_cuidados {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#texto_linha2_cuidados {
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+#caixa_cuidado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caixas_cuidados {
+    width: 250px;
+    height: 300px;   
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 2%;
+}
+
+.img_cuidados {
+    height: 300px;
+    border-radius: 20px;
+  
+}
+
+.rodape {
+    height: 100px;
+    width: 100%;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#logo_rodape {
+    width: 30%;
+    text-align: center;
+}
+
+#copyright {
+    color: white;
+    width: 30%;
+    text-align: center;
+}
+
+#icones_rodape {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 30%;
+    text-align: center;
+}
+
+
+
+
+/* SERINGA */
+
+
+.agulha-1,
+.marcas-volume,
+.embulo-interno,
+.embulo {
+    background-color: var(--cor-aux1);
+}
+
+.agulha-3,
+.agulha-2,
+.agulha,
+.corpo,
+.cabo-embulo {
+    background-color: #fafafa;
+}
+
+.embulo{
+    height: 70px;
+}
+
+.agulha-1,
+.agulha-2,
+.agulha-1 {
+    border-radius: 0 5px 5px 0;
+}
+
+.vacinometro,
+.corpo,
+.seringa-interno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.embulo {
+    width: 10px;
+    border-radius: 5px;
+}
+
+.cabo-embulo {
+    width: 40px;
+    height: 25px;
+}
+
+.corpo {
+    width: 150px;
+    height: 40px;
+    border-radius: 0 15px 15px 0;
+    border: 5px solid #fafafa;
+    border-left: 0px;
+}
+
+.cabo-embulo-interno {
+    background-color: #0c0a0a56;
+    width: 40%;
+    height: 25px;
+    animation: efeito 5s infinite alternate; /* alternate = Esta propriedade define a direção da 
+    animação após o ciclo. Você pode estipular os seguintes valores: alternate – Neste caso a 
+    animação inverte a direção em cada ciclo. 
+    Em cada ciclo ímpar, a animação é reproduzida (0% a 100%). 
+    Em cada ciclo par, a animação é reproduzida (100% a 0%). */
+}  
+
+@keyframes efeito {
+    from {
+        width: 400%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+.embulo-interno {
+    width: 6px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.liquido {
+    background-color: #009e90;
+    width: 90%;
+    height: 35px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.marcas-volume {
+    width: 2px;
+    height: 10px;
+    border-radius: 3px;
+    margin-left: 15%;
+}
+
+.agulha {
+    width: 10px;
+    height: 20px;
+}
+
+.agulha-1 {
+    width: 10px;
+    height: 20px;
+}
+
+.agulha-2 {
+    width: 10px;
+    height: 10px;
+}
+
+.agulha-3 {
+    width: 50px;
+    height: 3px;
+}
+
+/* FIM SERINGA */
+
+.botao-top{
+    position: fixed;
+    bottom: 7vh;
+    right: 4vw;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor-detalhes);
+    border-radius: 100%;
+    display: none;
+}
+
+.imagem-botao{
+    width: 30px;
+}
+
+
+.menu_drop {       
+    display: inline-block;
+    margin: auto 0;
+    cursor:pointer;
+
+}
+
+.title{    
+    width:50px; 
+    text-align: center;    
+    box-sizing:border-box;
+    background-color: #ECF0F1; 
+    padding:10px;
+    border-radius:4px;    
+}
+
+.dropdown{
+    margin-top:5px;
+    max-height:0;
+    display: none;
+    z-index: 100;
+}
+
+.menu_drop #menu_dropdown{
+    width: 20px;        
+}
+
+.menu_drop li{
+    text-decoration: none;  
+    background-color: #ECF0F1; 
+    padding:15px 14px;
+    margin:0;   
+    list-style: none;
+    z-index: 1000;
+    color: var(--cor-detalhes);
+    font-weight: bold;
+
+}
+
+.menu_drop li:hover{
+    background: var(--cor-detalhes);
+    color: #000;
+    box-shadow:0 0 30px -10px #000;
+}
+
+@media screen and (max-width: 600px){
+    #secao_vacinometro {   
+        width: 90%;       
+    }
+    #posicao_relogio{         
+        padding-right: 5px;   
+     
+    }
+    
+}
+
+@media screen and (max-width: 850px){
+    #banner_index h1{
+        font-size: 9vw;
+    }
+
+    #caixa_cuidado {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:900px){     
+    .rodape {
+        height: 200px;
+        width: 100%;
+        background-color: var(--cor-principal);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5vh;
+        text-align: center;
+    }
+    
+    #logo_rodape {
+        width: 80%;      
+        text-align: center;
+    }
+    
+    #copyright {
+        color: white;
+        width: 80%;  
+     
+        text-align: center;
+    }
+    
+    #icones_rodape {
+        display: flex;
+        width: 80%; 
+        padding-left: 25%; 
+        padding-right: 25%;
+        justify-content: space-around;   
+        text-align: center;
+    }
+
+    .botao-top{      
+        width: 50px;
+        height: 50px;
+       
+    }
+}
+
+.modoNoturno {
+    background-color: #28282B;
+    color: white;
+}
+
+.modoNoturnoBorda {
+    background-color: #28282B;
+    border: solid 1px white;
+    color: white;
+}
+
+.modoNoturnoFundo {
+    background-color: var(--cor-aux1);
+}
